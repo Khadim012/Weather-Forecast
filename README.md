@@ -31,3 +31,9 @@
 - In this project I used Web-service with NSURLsession.(I used a simple use way but I have experience on Alamofire for swift and on AFNetworking for Objective C).
 - In this project I used Codable for parsing data.(but In my current job place I am using Object Mapper with VIPER architectures).
 - Extensions for view Shadow. (If we have same type of shadows, borders, text and UI then we can create class for UIView, Buttons and for labels and can asign them for code reusability). 
+
+![IMG_0189](https://user-images.githubusercontent.com/44742264/226069193-e368515f-0960-4704-84de-d9b216a48d66.PNG)
+
+
+
+
