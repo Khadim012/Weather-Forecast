@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="WatherStatusView" id="iN0-l3-epB" customClass="WatherStatusView" customModule="weatherForecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xu4-WR-dys">
+                    <rect key="frame" x="0.0" y="2" width="20" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNX-yA-yvf">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="19"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymr-rx-V61">
+                            <rect key="frame" x="0.0" y="21" width="20" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-kH-GmU">
+                    <rect key="frame" x="373" y="2" width="20" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKQ-dh-a4M">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="38"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="S5l-kH-GmU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="2fi-0x-3II"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="S5l-kH-GmU" secondAttribute="bottom" constant="16" id="6cM-nF-yEo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xu4-WR-dys" secondAttribute="bottom" constant="16" id="Nkk-b9-e57"/>
+                <constraint firstItem="Xu4-WR-dys" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pax-q7-EQV"/>
+                <constraint firstAttribute="trailing" secondItem="S5l-kH-GmU" secondAttribute="trailing" id="Zf4-vU-sER"/>
+                <constraint firstItem="Xu4-WR-dys" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="cPR-Hz-Wpb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblStatus" destination="ymr-rx-V61" id="TUW-WL-ls1"/>
+                <outlet property="lblTemp" destination="UKQ-dh-a4M" id="hjI-cM-aK6"/>
+                <outlet property="lblTime" destination="YNX-yA-yvf" id="2K9-XX-GMD"/>
+            </connections>
+            <point key="canvasLocation" x="136.64122137404578" y="-260.56338028169017"/>
+        </view>
+    </objects>
+</document>
